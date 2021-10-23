@@ -15,9 +15,6 @@ class ViewController: UIViewController {
         let vc = BottomSheetViewController()
         if let sheet = vc.sheetPresentationController {
             sheet.detents = [.medium(), .large()]
-            sheet.detents.forEach { detent in
-                print(String(describing: detent))
-            }
             sheet.largestUndimmedDetentIdentifier = .medium
             sheet.prefersScrollingExpandsWhenScrolledToEdge = true
             sheet.prefersGrabberVisible = true
